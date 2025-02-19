@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UTS Online</title>
+  <link rel="stylesheet" href="uts-style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="exam-card">
+      <header>
+        <h1>📚 Ujian Tengah Semester</h1>
+        <div id="examInfo">
+          <p>Nama: <span id="namaPeserta"></span></p>
+          <p>Waktu: <span id="timer"></span></p>
+        </div>
+      </header>
+
+      <form id="utsForm">
+        <!-- Placeholder untuk soal, soal akan dimasukkan secara dinamis -->
+        <div id="questionsContainer"></div>
+        <button type="submit" class="btn-primary">Selesai Ujian</button>
+      </form>
+    </div>
+  </div>
+  
+  <!-- Sertakan file data soal sebelum script utama -->
+  <script src="questions.js"></script>
+  <script src="script-uts.js"></script>
+</body>
+</html>
